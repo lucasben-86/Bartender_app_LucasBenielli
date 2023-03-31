@@ -1,6 +1,4 @@
 
-//Declaro función que pide 3 valores de string para ofrecer una bebida 
-//entre 8 disponibles, de acuerdo a las preferencias del usuario
 function ofrecerTrago(){
     let sabor = prompt("¿Querés un trago dulce o amargo?");
     let tamanio= prompt("Ok. ¿Lo querés en vaso corto o largo?");
@@ -63,7 +61,6 @@ if (isNaN(EDAD)) {
         }
     } while (i<3);
     alert(NOMBRE + " ,creo que te haría bien salir a tomar un poco de aire");
-//ver cómo hacer para que no salte siempre este alert,incluso luego del que cobra con qr?
 }else{
     alert("Rajá de acá");
     }
