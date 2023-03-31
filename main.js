@@ -30,7 +30,10 @@ function ofrecerTrago(){
                                     alert("Voy a prepararte un PETAQUERO CUAQUERO");
                                 }else{
                                     if (sabor == "amargo" && tamanio == "corto" && intensidad == "fuerte") {
-                                        alert("Voy a prepararte un GROG SECRETO");}
+                                        alert("Voy a prepararte un GROG SECRETO");
+                                                                         
+                                    }
+                                        
                                     }
                                 }
                             }
@@ -43,22 +46,23 @@ function ofrecerTrago(){
     
 const NOMBRE= prompt("¡Buenas noches! ¿Cómo te llamás?");
 const EDAD= parseInt(prompt("Hola, " + NOMBRE +". ¿Me podrías decir tu edad?"));
-//qué pasa si ingresa edad con letras?
 
-if (EDAD>=18) {
-    alert("Ok. Te voy a ayudar a que encuentres tu trago favorito.");
+if (isNaN(EDAD)) {
+    alert("La edad ingresada no es un número. Intente nuevamente");
+    } else if (EDAD >= 18) {
+    alert("Ok. Te voy a ayudar a que encuentres tu trago favorito.");    
     let i=0;
     do {
         ofrecerTrago();
         let unoMas= prompt("¿Vas a querer otro trago?");
-        if (unoMas == "si" || unoMas == "SI" || unoMas == "sí") {
+        if (unoMas.toLowerCase() == "si") {
             i++;
         } else {
         alert("Ok, acá está el QR, escaneá cuando quieras");
         break;
         }
     } while (i<3);
-    alert("Creo que te haría bien salir a tomar un poco de aire");
+    alert(NOMBRE + " ,creo que te haría bien salir a tomar un poco de aire");
 //ver cómo hacer para que no salte siempre este alert,incluso luego del que cobra con qr?
 }else{
     alert("Rajá de acá");
