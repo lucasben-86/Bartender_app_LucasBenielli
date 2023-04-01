@@ -1,5 +1,5 @@
-# Benielli
- Proyecto JS en Coderhouse
+# Proyecto JS en Coderhouse
+Alumno: Lucas Benielli
 
 El proyecto consiste en una web app que ayuda y asiste al usuario en la selección de los ingredientes para un cocktail y en su preparación.
 Básicamente, se ofrecen las siguientes opciones:
