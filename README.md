@@ -1,6 +1,14 @@
 # Proyecto JS en Coderhouse
 Alumno: Lucas Benielli
 
+Primera PreEntrega de proyecto:
+
+-El script orienta al usuario, previa verificación de mayoría de edad, para la elección de un cocktail.
+ Asimismo el programa permite vender hasta 3 tragos por script.
+
+-------------------------------------------
+Proyecto general
+
 El proyecto consiste en una web app que ayuda y asiste al usuario en la selección de los ingredientes para un cocktail y en su preparación.
 Básicamente, se ofrecen las siguientes opciones:
 -Asistente para preparar un trago en función a 3 elementos: base alcohólica, tamaño e intensidad del trago;
