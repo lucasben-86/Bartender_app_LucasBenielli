@@ -1,10 +1,10 @@
 # Proyecto JS en Coderhouse
 Alumno: Lucas Benielli
 
-Primera PreEntrega de proyecto:
+Segunda PreEntrega de proyecto:
 
--El script orienta al usuario, previa verificación de mayoría de edad, para la elección de un cocktail.
- Asimismo el programa permite vender hasta 3 tragos por script.
+-El script le solicita al usuario que ingrese, una por una, las botellas que tiene en su casa (o que usará para preparar tragos).
+Luego el script le indica qué tragos puede prepararse con esas botellas, y desglosa la información individual de cada trago con su base alcohólica y complementos.
 
 -------------------------------------------
 Proyecto general
