@@ -1,112 +1,88 @@
-// function ofrecerTrago(sabor, tamanio, intensidad) {
-//   if (sabor === "dulce" && tamanio === "corto" && intensidad === "suave") {
-//     return alert("Voy a prepararte un PATADA DE ENANO");
-//   } else if (sabor === "dulce" && tamanio === "largo" && intensidad === "suave") {
-//     return alert("Voy a prepararte un REGALIZ DE PERDIZ");
-//   } else if (sabor === "dulce" && tamanio === "corto" && intensidad === "fuerte") {
-//     return alert("Voy a prepararte un FRESITA");
-//   } else if (sabor === "dulce" && tamanio === "largo" && intensidad === "fuerte") {
-//     return alert("Voy a prepararte un EMPERADOR EN LA PERA");
-//   } else if (sabor === "amargo" && tamanio === "corto" && intensidad === "suave") {
-//     return alert("Voy a prepararte un NOSTALGIA DE INVIERNO");
-//   } else if (sabor === "amargo" && tamanio === "largo" && intensidad === "suave") {
-//     return alert("Voy a prepararte un NOVENO REGIMIENTO");
-//   } else if (sabor === "amargo" && tamanio === "corto" && intensidad === "fuerte") {
-//     return alert("Voy a prepararte un PETAQUERO CUAQUERO");
-//   } else if (sabor === "amargo" && tamanio === "largo" && intensidad === "fuerte") {
-//     return alert("Voy a prepararte un GROG SECRETO");
-//   } else {
-//     return "error";
-//   }
-// }
-
-// const NOMBRE = prompt("¡Buenas noches! ¿Cómo te llamás?");
-// const EDAD = parseInt(
-//   prompt("Hola, " + NOMBRE + ". ¿Me podrías decir tu edad?")
-// );
-
-// if (isNaN(EDAD)) {
-//   alert("No te entendí, ¿vamos de nuevo?");
-// } else if (EDAD >= 18) {
-//   alert("Ok! Te voy a ayudar a que encuentres tu trago favorito.");
-//   let i = 0;
-//   do {
-//     alert("Vamos con el trago número " + (i + 1));
-//     let sabor = prompt("¿Querés un trago dulce o amargo?");
-//     let tamanio = prompt("Ok. ¿Lo querés en vaso corto o largo?");
-//     let intensidad = prompt(
-//       "Por último, ¿querés que sea un trago suave o fuerte?"
-//     );
-//     let respuesta = ofrecerTrago(sabor, tamanio, intensidad);
-//     if (respuesta == "error") {
-//       alert("No te entendí, ¿me lo repetís?");
-//     } else {
-//       let unoMas = prompt("¿Vas a querer otro trago?");
-//       if (unoMas.toLowerCase() == "si") {
-//         i++;
-//       } else {
-//         alert("Ok, acá está el QR, escaneá cuando quieras");
-//         break;
-//       }
-//     }
-//   } while (i < 3);
-//   alert(NOMBRE + " ,creo que te haría bien salir a tomar un poco de aire");
-// } else {
-//   alert("Volvé cuando seas mayor de edad");
-// }
-
-function armarBarra () {
-  const resultado = listaDeTragos.filter((el) => el.botella.includes(botellaElegida))
-  return (listaPersonal.push(resultado));
-}
+//***LEER COMENTARIOS EN ORDEN DE NUMERACIÓN***
 
 class Trago {
-  constructor (nombre, botella, complemento, terminacion) {
-      this.nombre = nombre;  
-      this.botella = botella;
-      this.complemento = complemento;
-      this.terminacion = terminacion;
+    constructor (nombre, botella, complemento, terminacion) {
+        this.nombre = nombre;  
+        this.botella = botella;
+        this.complemento = complemento;
+        this.terminacion = terminacion;
+    }
   }
-}
-
-const trago1 = new Trago ("Fernet", "Fernet Branca", "Gaseosa Cola", "hielo");
-const trago2 = new Trago ("Cubalibre", "Ron", "Gaseosa Cola", "hielo");
-const trago3 = new Trago ("Margarita", "Cointreau", "Tequila", "limón");
-const trago4 = new Trago ("Amaretto Sour", "Amaretto", "Limón","almíbar");
-const trago5 = new Trago ("Cardinale", "Campari", "Vermut Seco","Gin");
-const trago6 = new Trago ("Cynar Julep", "Cynar", "Pomelo", "menta");
-const trago7 = new Trago ("Negroni", "Gin", "Vermut rosso","Campari");
-const trago8 = new Trago ("Old Fashioned", "Whisky", "Angostura","hielo");
-const trago9 = new Trago ("Tequila Sunrise", "Tequila", "Granadina","naranja");
-const trago10 = new Trago ("Gimlet", "Gin", "Jugo de Lima","almíbar");
-const trago11 = new Trago ("Gin Tonic", "Gin", "Gaseosa Tónica","hielo");
-const trago12 = new Trago ("Caipirinha", "Cachaza", "Lima","Azúcar");
-const trago13 = new Trago ("Piña colada", "Ron", "Crema de coco","ananá");
-const trago14 = new Trago ("Mojito", "Ron", "Lima","Menta");
-const trago15 = new Trago ("Manhattan", "Whisky", "Vermut rosso","Cereza");
-
-const listaDeTragos = [trago1,trago2,trago3,trago4,trago5,trago6,trago7,trago8,
-                      trago9,trago10,trago11,trago12,trago13,trago14,trago15];
-
-const botellas = listaDeTragos.map(trago => trago.botella);
-const botellasLista = botellas.join("\n");
-let listaPersonal = [];
-
-alert("Voy a indicarte qué tragos podés preparar con las botellas que tengas en tu casa");
-do {
-  botellaElegida= prompt("Elegí una de las siguientes opciones (para salir, escribí ESC):" + "\n" + botellasLista)
-  armarBarra()}
-  // alert("Elegiste: " + botellaElegida + " . Si tenés otra botella, ingresala a continuación")}
-  while (botellaElegida != "ESC")
-  //pulir quitando opciones en blanco y demases
-
-console.log (listaPersonal);
-
-const tragosElegidos = listaPersonal.forEach((num) => {
   
-})
-
-alert("podés prepararte un " + tragosElegidos)
-
-//estaría bueno que me asista con los tragos para cada botella elegida
-//onda: vamos primero con los tragos que podés preparar con "gin"
+  const trago1 = new Trago ("Fernet", "Fernet Branca", "Gaseosa Cola", "hielo");
+  const trago2 = new Trago ("Cubalibre", "Ron", "Gaseosa Cola", "hielo");
+  const trago3 = new Trago ("Margarita", "Cointreau", "Tequila", "limón");
+  const trago4 = new Trago ("Amaretto Sour", "Amaretto", "Limón","almíbar");
+  const trago5 = new Trago ("Cardinale", "Campari", "Vermut Seco","Gin");
+  const trago6 = new Trago ("Cynar Julep", "Cynar", "Pomelo", "menta");
+  const trago7 = new Trago ("Negroni", "Gin", "Vermut rosso","Campari");
+  const trago8 = new Trago ("Old Fashioned", "Whisky", "Angostura","hielo");
+  const trago9 = new Trago ("Tequila Sunrise", "Tequila", "Granadina","naranja");
+  const trago10 = new Trago ("Caipirinha", "Cachaza", "Lima","Azúcar");
+  
+  const listaDeTragos = [trago1,trago2,trago3,trago4,trago5,trago6,trago7,trago8,trago9,trago10];
+  
+  //1- Defino la clase Trago e instancio una serie de objetos con las propiedades de cada trago.
+  //   A su vez, defino un array que incluya todos los objetos instanciados, para usar luego.
+  
+  function armarBarra () {
+    const resultado = listaDeTragos.filter((el) => el.botella.includes(botellaElegida))
+    return (listaPersonal.push(resultado));
+  }
+  
+  //4- con armarBarra quise intentar un HOF que buscara entre la propiedad "nombre" de cada objeto
+  //   y, en caso de encontrarla, retornara un push en el array vacío que definí antes.
+  //   Básicamente quería probar si una función podía retornar un método de arrays, y para mi sorpresa
+  //   y satisfacción, resultó.
+  
+  function mostrarTrago(trago) {
+    const mensaje = "El trago " + trago.nombre + " se prepara con " + trago.botella + "\n" +
+                    "También lleva " + trago.complemento + " y " + trago.terminacion
+    return mensaje;
+  }
+  
+  //6- Una función que recupera, dentro del forEach que la contiene, todas las propiedades de cada
+  //   objeto, lo que me sirve para mostrar en pantalla la información resultante del script.
+  
+  const botellas = listaDeTragos.map(trago => trago.botella);
+  const botellasLista = botellas.join("\n");
+  let listaPersonal = [];
+  
+  //2- Para presentar en pantalla un listado prolijo de las botellas a usar en los tragos,
+  //   creo un nuevo array que almacena los nombres de cada botella. Uso también el método join 
+  //   para insertar un salto de línea entre cada botella, espaciando la información en pantalla.
+  //   También creé un array vacío, que voy a ir completando con la data cargada por el usuario.
+  
+  alert("Voy a indicarte qué tragos podés preparar con las botellas que tengas en tu casa");
+    do {
+    botellaElegida = prompt("Elegí una de las siguientes opciones (para salir, escribí ESC):" + "\n" + botellasLista)
+      if (botellaElegida != "ESC") {
+          armarBarra();
+        }
+    }while (botellaElegida != "ESC");
+  
+  //3- El usuario ingresa vía prompts los nombres de las botellas (por cuestiones de tiempo
+  //   no me dediqué a filtrar con iteraciones las entradas incorrectas o vacías, espero que el usuario tipee bien)
+  //   el script ejecuta entonces la función armarBarra (salvo que ingrese ESC como primera información)
+  
+  console.log(listaPersonal);
+  
+  alert("Ahora te muestro el detalle de cada uno de los tragos que podés prepararte: ");
+  const todosLosTragosObjetos = listaPersonal.flat();
+  
+  console.log(todosLosTragosObjetos);
+  //5- Muestro las salidas de consola antes y después del método flat. Me trabé mucho en este paso,
+  //   hasta que entendí que mi array nuevo contenía una lista de arrays, y no de objetos que pudiera recuperar
+  //   con un forEach. Busqué y revisé y encontré que el método flat me permitía aplanar arrays anidados en un array.
+  //   la variable todosLosTragosObjetos me permitió seguir con vida en la orquesta barroca que había creado jaja.
+  
+  todosLosTragosObjetos.forEach((trago) => {
+    alert(mostrarTrago(trago));
+  });
+  
+  alert("Visitá la sección Cómo lo preparo para aprender a hacerlos!");
+  
+  
+  
+  
+  
