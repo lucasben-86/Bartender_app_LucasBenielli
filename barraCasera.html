@@ -45,15 +45,21 @@
 <!-- levanta script de botellas, interactua con dom, activa eventos -->
 
 <!-- para crear esta lista, debería recorrer un ciclo de las botellas disponibles y agregar un botón por cada uno -->
-<div class="btn-group-vertical btn-group-lg" role="group" aria-label="Basic example">
-    <button type="button" class="btn btn-secondary">Ron</button>
-    <button type="button" class="btn btn-secondary">Tequila</button>
-    <button type="button" class="btn btn-secondary">Fernet</button>
+
+
+<div class="row" id="main">
+  <div class="col">
+    <div class="btn-group-vertical btn-group-lg" role="group" aria-label="Basic example" id="grupo-tragos"></div>
   </div>
-
-
+  <div class="col">
+    <div id="detalles-tragos" >
+        <h1 id="trago-titulo"></h1>
+        <h2 id="trago-complemento"></h2>
+    </div>
+  </div>
+</div>
 <!-- tira al final un enlace a la pagina tuBarra, donde se guardan los tragos -->
 
-<script src="testdom.js""></script>
+  <script src="testdom.js""></script>
 </body>
 </html>

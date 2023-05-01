@@ -20,12 +20,12 @@ class Trago {
   const trago10 = new Trago ("Caipirinha", "Cachaza", "Lima","Azúcar");
   
   const listaDeTragos = [trago1,trago2,trago3,trago4,trago5,trago6,trago7,trago8,trago9,trago10];
-
+  
   function armarBarra () {
     const resultado = listaDeTragos.filter((el) => el.botella.includes(botellaElegida))
     return (listaPersonal.push(resultado));
   }
-    
+  
   function mostrarTrago(trago) {
     const mensaje = "El trago " + trago.nombre + " se prepara con " + trago.botella + "\n" +
                     "También lleva " + trago.complemento + " y " + trago.terminacion
@@ -43,7 +43,7 @@ class Trago {
           armarBarra();
         }
     }while (botellaElegida != "ESC");
-    
+  
   alert("Ahora te muestro el detalle de cada uno de los tragos que podés prepararte: ");
   const todosLosTragosObjetos = listaPersonal.flat();
   
