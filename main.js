@@ -45,7 +45,7 @@ for (const trago of listaDeTragos) {
       const guardarRecetaBtn = document.querySelector("#guardarReceta");
       guardarRecetaBtn.addEventListener('click', () => {
         const tragoGuardado = JSON.stringify(trago);
-        localStorage.setItem('tragoGuardado', tragoGuardado);
+        localStorage.setItem("tragoGuardado", tragoGuardado);
         alert("Guardado!");
       });
     });
