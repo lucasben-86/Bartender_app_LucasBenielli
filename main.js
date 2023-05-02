@@ -44,9 +44,17 @@ for (const trago of listaDeTragos) {
       `
       const guardarRecetaBtn = document.querySelector("#guardarReceta");
       guardarRecetaBtn.addEventListener('click', () => {
-        const tragoGuardado = JSON.stringify(trago);
-        localStorage.setItem("tragoGuardado", tragoGuardado);
+        let tragosGuardados = JSON.parse(localStorage.getItem("tragosGuardados"));
+        if(!tragosGuardados || tragosGuardados.length === 0) {
+          tragosGuardados = []
+        };
+        if (tragosGuardados.find(tr => tr.nombre === trago.nombre)) {
+            alert("Ya está en tu lista");
+          }else{
+        tragosGuardados.push(trago);
+        localStorage.setItem("tragosGuardados", JSON.stringify(tragosGuardados));
         alert("Guardado!");
+      }
       });
     });
 

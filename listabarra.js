@@ -1,14 +1,11 @@
-const tragoEnStorage = document.querySelector("#info-trago");
+const tragoLista = JSON.parse(localStorage.getItem("tragosGuardados"));
 
-const tragoGuardado = localStorage.getItem("tragoGuardado");
+console.log(tragoLista);
 
-const tragoObj = JSON.parse(tragoGuardado);
+let listado = document.querySelector("#tragosGuardados");
 
-for (const prop in tragoObj) {
-  const label = document.createElement("span");
-  label.textContent = prop + ": ";
-  const value = document.createElement("span");
-  value.textContent = tragoObj[prop];
-  infoTrago.appendChild(label);
-  infoTrago.appendChild(value);
+for (const trago of tragoLista){
+  const li = document.createElement("ul");
+  li.innerText = trago.nombre;
+  listado.appendChild(li);
 }
