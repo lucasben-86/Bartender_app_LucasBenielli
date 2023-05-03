@@ -43,7 +43,7 @@ for (const trago of listaDeTragos) {
       <button type="button" class="btn btn-outline-warning btn-lg" id="guardarReceta">Guardar en la Barra</button>
       `
       const guardarRecetaBtn = document.querySelector("#guardarReceta");
-      guardarRecetaBtn.addEventListener('click', () => {
+      guardarRecetaBtn.addEventListener("click", () => {
         let tragosGuardados = JSON.parse(localStorage.getItem("tragosGuardados"));
         if(!tragosGuardados || tragosGuardados.length === 0) {
           tragosGuardados = []
