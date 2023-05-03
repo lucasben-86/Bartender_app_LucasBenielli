@@ -53,7 +53,7 @@ for (const trago of listaDeTragos) {
           }else{
         tragosGuardados.push(trago);
         localStorage.setItem("tragosGuardados", JSON.stringify(tragosGuardados));
-        alert("Guardado!");
+        alert("Guardado en tu barra!");
       }
       });
     });
