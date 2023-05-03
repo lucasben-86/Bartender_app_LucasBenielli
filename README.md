@@ -1,10 +1,11 @@
 # Proyecto JS en Coderhouse
 Alumno: Lucas Benielli
 
-Segunda PreEntrega de proyecto:
+Tercera PreEntrega de proyecto:
 
--El script le solicita al usuario que ingrese, una por una, las botellas que tiene en su casa (o que usará para preparar tragos).
-Luego el script le indica qué tragos puede prepararse con esas botellas, y desglosa la información individual de cada trago con su base alcohólica y complementos.
+-Debe ingresarse a la sección "Armá tu barra" del navbar superior.
+-En dicha sección hay que ingresar a "Con lo que tengas", donde está el script de la preEntrega 3
+-Finalmente, en la sección "Tus tragos" del navbar superior hay un segundo script para las funciones del localStorage (allí se guardan los tragos elegidos en la sección "Con lo que tengas).
 
 -------------------------------------------
 Proyecto general
