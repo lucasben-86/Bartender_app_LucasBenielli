@@ -21,7 +21,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="barra.html">Armá tu barra</a>
+            <a class="nav-link active" aria-current="page" href="barra-casera.html">Armá tu barra</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/lista-tragos.html">Tus tragos</a>
@@ -39,23 +39,21 @@
     <div class="d-flex col-sm-6" role="search">
       <input type="text" class="form-control form-control-lg" placeholder="escribí el nombre del trago">
       <button class="btn btn-outline-warning">Buscar</button>
-      <button class="btn btn-outline-success mx-2">Buscá un trago al azar</button>
+      <button class="btn btn-outline-warning mx-4">Aleatorio</button>
     </div>
   </div>
 
-    <section class="container">
-        <div class="row mt-5">
-            <div class="col-md-4 text-center">
-                <div class="card text-white bg-dark h-100">
-                    <img src="./img/basealc.jfif" class="card-img-top h-100" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Por base alcohólica</h5>
-                      <p class="card-text">Elegí qué tipo de base alcohólica preferís</p>
-                      
+  <section class="container">
+      <div class="row mt-5">
+          <div class="col-md-4 text-center">
+              <div class="card text-white bg-dark h-100" id="c1">
+              <img src="./img/basealc.jfif" class="card-img-top h-100" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Por base alcohólica</h5>
+                  <p class="card-text">Elegí qué tipo de base alcohólica preferís</p> 
           <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
            Click
           </button>
-
       <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
          <div class="modal-content">
@@ -72,7 +70,7 @@
                   <div class="carousel-inner">
                     <div class="carousel-item active">
                       <h3>Aperitivos</h3>
-                      <img src="/img/base_alcoholica/aperitivos2.jpg" class="d-block w-100 rounded" alt="...">
+                      <img id="imagen-aperitivos" src="/img/base_alcoholica/aperitivos2.jpg" class="d-block w-100 rounded" alt="...">
                     </div>
                     <div class="carousel-item">
                       <h3>Gin</h3>
@@ -108,18 +106,18 @@
       </div>
       </div>
 
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-warning" data-bs-dismiss="modal">Cerrar</button>
+        <div class="modal-footer">
+         <button type="button" class="btn btn-outline-warning" data-bs-dismiss="modal">Cerrar</button>
+        </div>
       </div>
-      </div>
-  </div>
+    </div>
   </div>
 </div>
 </div>
 </div>
 
         <div class="col-md-4 text-center">
-            <div class="card text-white bg-dark h-100">
+            <div class="card text-white bg-dark h-100" id="c2">
                 <img src="img/tamanio.jfif" class="card-img-top h-100" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Por tamaño</h5>
@@ -170,22 +168,23 @@
            </div>
          </div>
         </div>
-        </div>
-        </div>
+      </div>
+     </div>
 
-        <div class="col-md-4 text-center">
-            <div class="card text-white bg-dark h-100">
-                <img src="./img/intensidad.jpg" class="card-img-top h-100" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Descubri tu perfil</h5>
-                  <p class="card-text">¿No sabés qué tomar? ¡Te ayudamos a elegir!</p>
-                  <a href="#" class="btn btn-outline-warning">Click</a>
-                </div>
+    <div class="col-md-4 text-center">
+        <div class="card text-white bg-dark h-100" id="c3">
+              <img src="./img/intensidad.jpg" class="card-img-top h-100" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Descubrí tu perfil</h5>
+                <p class="card-text">¿No sabés qué tomar? ¡Te ayudamos a elegir!</p>
+                <a href="#" class="btn btn-outline-warning">Click</a>
               </div>
+            </div>
         </div>
     </div>
 </section>
 
+<script src="/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
 </body>

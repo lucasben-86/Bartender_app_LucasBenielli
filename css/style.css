@@ -8,7 +8,7 @@
 }
 
 .fondo {
-    background-image: url("../img/bar3.png");
+    background-image: url("../img/bar4.png");
     height: 30vh;
 }
 
@@ -17,3 +17,20 @@
     height:240px;
   }
 
+  /* .card.text-white.bg-dark.h-100 {
+    transition: opacity 0.3s;
+    opacity: 0.8;
+  }
+
+  .card.text-white.bg-dark.h-100:hover {
+    opacity: 1;
+  } */
+
+  /* #c1, #c2, #c3 {
+    transition: opacity 0.3s;
+    opacity: 0.8;
+  }
+  
+  #c1:hover, #c2:hover, #c3:hover {
+    opacity: 1;
+  } */

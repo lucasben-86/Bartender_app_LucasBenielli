@@ -1,9 +1,6 @@
 # Proyecto JS en Coderhouse
 Alumno: Lucas Benielli
 
-Tercera PreEntrega de proyecto:
+El proyecto consiste en un simulador personalizado que oriente al usuario
+en la selección y preparación de un cocktail, y de un planificador de barra.
 
--Debe ingresarse a la página a través del archivo index.htmml
--Luego, debe ingresarse a la sección "Armá tu barra" del navbar superior.
--En dicha sección hay que ingresar a "Con lo que tengas", donde está el script de la preEntrega 3
--Finalmente, en la sección "Tus tragos" del navbar superior hay un segundo script para las funciones del localStorage (allí se guardan los tragos elegidos en la sección "Con lo que tengas).
