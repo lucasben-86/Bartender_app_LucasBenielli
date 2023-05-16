@@ -37,9 +37,9 @@
   <div class="fondo row d-flex justify-content-center align-items-center">
     <h3 class="text-white pt-5 text-center">¿Qué te gustaría tomar?</h3>
     <div class="d-flex col-sm-6" role="search">
-      <input type="text" class="form-control form-control-lg" placeholder="escribí el nombre del trago">
-      <button class="btn btn-outline-warning">Buscar</button>
-      <button class="btn btn-outline-warning mx-4">Aleatorio</button>
+      <input id="buscar" type="text" class="form-control form-control-lg" placeholder="escribí el nombre del trago">
+      <button id="btnBuscar" class="btn btn-warning">Buscar</button>
+      <button id="btnAleatorio" class="btn btn-warning mx-4">Aleatorio</button>
     </div>
   </div>
 
@@ -70,27 +70,27 @@
                   <div class="carousel-inner">
                     <div class="carousel-item active">
                       <h3>Aperitivos</h3>
-                      <img id="imagen-aperitivos" src="/img/base_alcoholica/aperitivos2.jpg" class="d-block w-100 rounded" alt="...">
+                      <img id="imagen-aperitivo" src="/img/base_alcoholica/aperitivos2.jpg" class="d-block w-100 rounded" alt="...">
                     </div>
                     <div class="carousel-item">
                       <h3>Gin</h3>
-                      <img src="/img/base_alcoholica/gin2.jpg" class="d-block w-100 rounded" alt="...">
+                      <img id="gin-busqueda" src="/img/base_alcoholica/gin2.jpg" class="d-block w-100 rounded" alt="...">
                     </div>
                     <div class="carousel-item">
                       <h3>Ron</h3>
-                      <img src="/img/base_alcoholica/ron.jpg" class="d-block w-100 rounded" alt="...">
+                      <img id="ron-busqueda"src="/img/base_alcoholica/ron.jpg" class="d-block w-100 rounded" alt="...">
                     </div>
                     <div class="carousel-item">
                       <h3>Tequila</h3>
-                      <img src="/img/base_alcoholica/tequila.jpg" class="d-block w-100 rounded" alt="...">
+                      <img id="tequila-busqueda" src="/img/base_alcoholica/tequila.jpg" class="d-block w-100 rounded" alt="...">
                     </div>
                     <div class="carousel-item">
                       <h3>Vodka</h3>
-                      <img src="/img/base_alcoholica/vodka.jpg" class="d-block w-100 rounded" alt="...">
+                      <img id="vodka-busqueda" src="/img/base_alcoholica/vodka.jpg" class="d-block w-100 rounded" alt="...">
                     </div>
                     <div class="carousel-item">
                       <h3>Whisky</h3>
-                      <img src="/img/base_alcoholica/whiskytipo.jpg" class="d-block w-100 rounded" alt="...">
+                      <img id="whisky-busqueda" src="/img/base_alcoholica/whiskytipo.jpg" class="d-block w-100 rounded" alt="...">
                     </div>
                   </div>
                   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -184,7 +184,7 @@
     </div>
 </section>
 
-<script src="/main.js"></script>
+<script src="/js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
 </body>

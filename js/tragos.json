@@ -1,0 +1,81 @@
+[
+    {
+      "id": "1",
+      "nombre": "Cynar Julep",
+      "botella": "Cynar",
+      "botella2": "",
+      "complemento": "Pomelo rosado",
+      "vaso": "largo",
+      "sabor": "dulce",
+      "intensidad": "suave",
+      "imagen": "https://media-cdn.tripadvisor.com/media/photo-p/1b/04/28/8f/cynar-julep.jpg",
+      "comentario": "Creado en Buenos Aires a fines de los años 90 por Santiago Lombardi, en el Gran Bar Danzón. Surgió como un Mojito de Cynar con gaseosa de pomelo, con el tiempo cada bartender le agregó su impronta. Es un clásico porteño.",
+      "ingredientes": [
+        "2 oz de Cynar",
+        "1/2 oz de Jugo de limón",
+        "2 cucharadas de azúcar negra",
+        "Jugo o gaseosa de Pomelo rosado",
+        "3 Ramas de menta",
+        "Garnish: menta y rodaja de pomelo rosado"
+      ],
+      "preparación": "En el fondo del vaso, machacá 2 ramas de menta, el jugo de limón y el azúcar. Agregá hielo roto y Cynar, revolvé un poco. Sumá más hielo y completá con pomelo. Aplaudí la última rama de menta y usala para decorar junto con la rodaja de pomelo rosado"
+    },
+    {
+      "id": "2",
+      "nombre": "Negroni",
+      "botella": "Gin",
+      "botella2": "Campari",
+      "complemento": "Vermut Rosso",
+      "vaso": "corto",
+      "sabor": "dulce",
+      "intensidad": "fuerte",
+      "imagen": "https://vinomanos.com/wp-content/uploads/2022/08/negroni-trago.jpg",
+      "comentario": "Creado en 1919 por Fosco Scarselli en el café Casoni de Florencia, supuestamente para el conde Negroni",
+      "ingredientes": [
+        "1 oz de Gin",
+        "1 oz de Campari",
+        "1 oz de Vermut Rosso",
+        "Garnish: twist o rodaja de naranja"
+      ],
+      "preparación": "Verté todos los ingredientes en un vaso corto sobre un hielo extra grande y revolvé un poco. También es muy común refrescarlo, técnica que lo diluye, haciéndolo más fácil de beber. Decorá con una rodaja o twist de piel de naranja"
+    },
+    {
+      "id": "3",
+      "nombre": "Mai Tai",
+      "botella": "Ron",
+      "botella2": "Triple sec Curaçao",
+      "complemento": "Jugo de Lima",
+      "vaso": "corto",
+      "sabor": "dulce",
+      "intensidad": "suave",
+      "imagen": "https://www.allrecipes.com/thmb/kJMZhUnuPyp4mq34_Ns9XQM9nV8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/2221437-mai-tai-Snacking-in-the-Kitchen-1x1-1-8c09cb073ff44204bf933818eadfc3b6.jpg",
+      "comentario": "Es el cóctel tiki más famoso; se atribuye su creación a Victor Jules Bergeron Jr., dueño del tiki bar Trader Vic´s. Se dice que la primera persona que lo probó grito Mai tai!, que significa el mejor de este mundo en tahitiano.",
+      "ingredientes": [
+        "1 1/2 oz de Ron",
+        "3/4 oz de Triple Sec curaçao",
+        "3/4 jugo de lima",
+        "Garnish: penacho de menta y rodaja de lima"
+      ],
+      "preparación": "Batí todos los ingredientes y colá en vaso corto sobre hielo roto. Decoralo con las hojitas de menta y la rodaja de lima"
+     },
+     {
+      "id": "4",
+      "nombre": "Margarita",
+      "botella": "Tequila",
+      "botella2": "Cointreau",
+      "complemento": "Jugo de Limón",
+      "vaso": "corto",
+      "sabor": "dulce",
+      "intensidad": "fuerte",
+      "imagen": "https://media.scoolinary.app/blog/images/2021/05/Coctel-Margarita.jpg",
+      "comentario": "En verano es usual que lo sirvan licuado en modo frozen, con la consistencia de un helado",
+      "ingredientes": [
+        "2 oz de Tequila",
+        "1 oz de Cointreau",
+        "1 oz de Jugo de limón",
+        "Garnish: sal para escarchar la copa"
+      ],
+      "preparación": "Batí todos los ingredientes y colá en copa cóctel. Como decoración, es tradición pintar con limón el borde de la copa y apoyarlo en un plato con sal para lograr un borde salado."
+     }
+  ]
+  
