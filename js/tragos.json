@@ -2,7 +2,7 @@
     {
       "id": "1",
       "nombre": "Cynar Julep",
-      "botella": "Cynar",
+      "botella": "Aperitivos",
       "botella2": "",
       "complemento": "Pomelo rosado",
       "vaso": "largo",
@@ -76,6 +76,146 @@
         "Garnish: sal para escarchar la copa"
       ],
       "preparación": "Batí todos los ingredientes y colá en copa cóctel. Como decoración, es tradición pintar con limón el borde de la copa y apoyarlo en un plato con sal para lograr un borde salado."
+     },
+     {
+      "id": "5",
+      "nombre": "Bloody Mary",
+      "botella": "Vodka",
+      "botella2": "Jugo de Tomate",
+      "complemento": "Jugo de Limón",
+      "vaso": "largo",
+      "sabor": "amargo",
+      "intensidad": "suave",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSsDdObHqR5zEFxcmdBow_8xbolCh_Gq6dkw&usqp=CAU",
+      "comentario": "Se puede hacer directo en el vaso o se puede batir suavemente, o bien en la coctelera, pasándolo de un vaso al otro un par de veces. Si te sent+is arriesgado, podés usar la técnica del rolling",
+      "ingredientes": [
+        "2 oz de Vodka",
+        "Juego de Tomate",
+        "1 oz de jugo de Limón",
+        "1 cucharada de Salsa Inglesa",
+        "Pimienta negra",
+        "Sal de apio a gusto",
+        "Salsa picante a gusto",
+        "Garnish: rama de apio"
+      ],
+      "preparación": "Colocá el jugo de lima, la salsa inglesa, la salsa picante, pimienta y sal de apio en la coctelera. Revolvé y agregá hielo. sumá el vodka y completá con jugo de tomate frío. Batí suavemente y colá sobre hielo nuevo (a elección, podés tomarlo sin hielo). Decorá con la rama de apio, ¡fundamental!"
+     },
+     {
+      "id": "6",
+      "nombre": "Old Fashioned",
+      "botella": "Whisky",
+      "botella2": "Bitter Angostura",
+      "complemento": "Almíbar",
+      "vaso": "corto",
+      "sabor": "dulce",
+      "intensidad": "fuerte",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnMnN4XaBtUKoDnUkScJYXRpZTpW7KJn2y7A&usqp=CAU",
+      "comentario": "Una de las recetas más antiguas. Originalmente se llamaba Whisky Cocktail y se hacía con 2 terrones de azúcar embebidos en bitter Angostura, que se machacaban con una rodaja de naranja. Luego se agregaba hielo, bourbon y se decoraba.",
+      "ingredientes": [
+        "2 oz de Whisky Bourbon",
+        "1 cucharada de almíbar",
+        "2 dashes de Bitter Angostura",
+        "Garnish: twist de naranja y una cereza"
+      ],
+      "preparación": "Agregá todo en directo en el vaso corto sobre hielo en cubitos, revolvé un poco y terminá con el twist. La cereza es opcional. Algunos prefieren refrescar antes y colar sobre un vaso con un solo hielo grande."
+     },
+     {
+      "id": "7",
+      "nombre": "Gin Tonic",
+      "botella": "Gin",
+      "botella2": "",
+      "complemento": "Gaseosa Tónica",
+      "vaso": "largo",
+      "sabor": "amargo",
+      "intensidad": "suave",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-J_BJi3IS9w4181JLpkDXjxhKu12khzxz6g&usqp=CAU",
+      "comentario": "Un clásico.",
+      "ingredientes": [
+        "2 oz de Gin",
+        "Tónica a gusto",
+        "Pepino, limón o preferencias",
+        "Garnish: rodaja de limón"
+      ],
+      "preparación": "Usá cubos grandes de hielo y volcá el Gin, luego la Tónica y complementá a gusto. Variantes hay miles."
+     },
+     {
+      "id": "8",
+      "nombre": "Cubalibre",
+      "botella": "Ron",
+      "botella2": "",
+      "complemento": "Gaseosa Cola",
+      "vaso": "largo",
+      "sabor": "dulce",
+      "intensidad": "fuerte",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6kpP28abRbHYU84i4JlYUmon4kDBFfO7GAfPeAh4APEzmXvDrddcz4vE6iM1dD96FUGk&usqp=CAU",
+      "comentario": "El amigo de los veranos y de los foquistas revolucionarios",
+      "ingredientes": [
+        "2 oz de Ron",
+        "Gaseosa cola a gusto",
+        "Opcional: rodaja de naranja o limón"
+      ],
+      "preparación": "Poné hielo, ron, cola, tomalo, repetí."
+     },
+     {
+      "id": "9",
+      "nombre": "Tequila Sunrise",
+      "botella": "Tequila",
+      "botella2": "Cointreau",
+      "complemento": "Jugo de Naranja",
+      "vaso": "largo",
+      "sabor": "dulce",
+      "intensidad": "suave",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbzaDhicNanNVw3t3Y-WE8JBywcTR_hUwaHA&usqp=CAU",
+      "comentario": "Emblema de los años ochenta; solía ser tequila, naranja y granadina. Esta es la mejor variante.",
+      "ingredientes": [
+        "2 oz de Tequila",
+        "3 oz de Jugo de naranja exprimido",
+        "1/2 oz de Jugo de lima",
+        "1/2 oz de Cointreau",
+        "1/2 oz de Granadina",
+        "Garnish: rodaja de naranja"
+      ],
+      "preparación": "Poné directamente en un vaso largo con hielo todos los ingredientes menos la granadina. Revolvé y agregá la granadina suavemente, logrando un degradé similar al atardecer. Decorá con la rodaja de naranja."
+     },
+     {
+      "id": "10",
+      "nombre": "Cosmopolitan",
+      "botella": "Vodka",
+      "botella2": "Cointreau",
+      "complemento": "Jugo de Lima",
+      "vaso": "corto",
+      "sabor": "amargo",
+      "intensidad": "suave",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx_VBrSXHPdQgJbs7tZhUn5AFF09fAjf-L3A&usqp=CAU",
+      "comentario": "La primera receta conocida es de 1934. Muchos reclaman ser sus creadores; la receta actual fue creada en 1987 por Toby Cecchini en Manhattan. Es el cóctel que beben las protagonistas de la serie Sex and the City.",
+      "ingredientes": [
+        "2 oz de Vodka de limón (puede ser Absolut Citron",
+        "1 oz de Cointreau",
+        "3/4 oz de Jugo de lima",
+         "1/2 oz de Jugo de arándanos",
+        "Garnish: twist de naranja"
+      ],
+      "preparación": "Batí enérgicamente todos los ingredientes. Colá en una copa cóctel previamente enfriada y decorá con un twist de cáscara de naranja."
+     },
+     {
+      "id": "11",
+      "nombre": "Mint Julep",
+      "botella": "Whisky",
+      "botella2": "Bitter Angostura",
+      "complemento": "Almíbar simple",
+      "vaso": "largo",
+      "sabor": "amargo",
+      "intensidad": "fuerte",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY3l3X65mPsZeRB1gXwUJEpcnugl_MtzPPSA&usqp=CAU",
+      "comentario": "Un clásico del sur de los Estados Unidos, es el cóctel oficial del Derby de Kentucky",
+      "ingredientes": [
+        "2 oz de Whisky Bourbon",
+        "1/2 oz de Almíbar simple",
+        "2 dashes de Bitter Angostura",
+        "12 hojas de menta",
+        "Garnish: hoja de menta"
+      ],
+      "preparación": "En el fondo del vaso machacá suavemente la menta junto al almíbar. Agregá hielo roto, sumá el bourbon y revolvé para integrar sabores. Agregá más hielo y decorá con una ramita de menta."
      }
   ]
   

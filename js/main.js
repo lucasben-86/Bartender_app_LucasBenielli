@@ -1,4 +1,5 @@
 const tragos = [
+  {id: "aperitivo-busqueda", botella: "Aperitivos"},
   {id: "gin-busqueda", botella: "Gin"},
   {id: "ron-busqueda", botella: "Ron"},
   {id: "tequila-busqueda", botella: "Tequila"},
@@ -28,10 +29,15 @@ window.addEventListener("DOMContentLoaded", async () => {
 
     const tragosFiltrados = data.filter(trago => trago.botella === botellaElegida);
     tragosFiltrados.forEach(trago => {
-      const li = document.createElement("li");
-      li.innerText = trago.nombre;
-      listaTragos.append(li);
       listaTitulo.innerHTML = `<h3>Tragos con base alcohólica de ${botellaElegida}</h3>`
+      const li = document.createElement("li");
+      li.innerHTML = `<div class="card" style="width: 18rem;">
+  			<img src="${trago.imagen}" class="card-img-top" alt="...">
+  				<div class="card-body">
+    				<p class="card-text">${trago.nombre}</p>
+  			  </div>
+		    </div>`;
+      listaTragos.append(li);
       listaTitulo.append();
     });
   }
