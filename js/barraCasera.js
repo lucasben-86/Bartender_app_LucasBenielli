@@ -27,7 +27,7 @@ const tragoSeleccionadoComplemento = document.querySelector("#trago-complemento"
 
 for (const trago of listaDeTragos) {
   const btn = document.createElement("button");                  
-  btn.className = "mt-2 btn btn-secondary";
+  btn.className = "mt-2 btn btn-outline-warning";
   btn.innerText = trago.botella;
 
   btn.addEventListener('click', () => {
