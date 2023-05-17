@@ -28,18 +28,35 @@ window.addEventListener("DOMContentLoaded", async () => {
     const data = await resp.json();
 
     const tragosFiltrados = data.filter(trago => trago.botella === botellaElegida);
-    tragosFiltrados.forEach(trago => {
-      listaTitulo.innerHTML = `<h3>Tragos con base alcohólica de ${botellaElegida}</h3>`
+    tragosFiltrados.forEach((trago, index) => {
+      listaTitulo.innerHTML = `<h3>Tragos con base alcohólica de ${botellaElegida}</h3>`;
       const li = document.createElement("li");
       li.innerHTML = `<div class="card" style="width: 18rem;">
-  			<img src="${trago.imagen}" class="card-img-top" alt="...">
-  				<div class="card-body">
-    				<p class="card-text">${trago.nombre}</p>
-  			  </div>
-		    </div>`;
+        <img src="${trago.imagen}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">${trago.nombre}</p> 
+          <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#receta-modal-${index}">Ver receta</button>
+          <div class="modal fade" id="receta-modal-${index}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title fs-5" id="staticBackdropLabel2">Receta</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4 class="mb-3 text-center fw-bold text-warning">${trago.nombre}</h4>
+                <p class="text-end"><em>${trago.comentario}</em></p>
+                <p class="fw-bold text-warning"><u>Ingredientes:</u></p>
+                <ul>${trago.ingredientes.map((cadaPaso) => `<li>${cadaPaso}</li>`).join('')}</ul>
+                <p class="mt-4 fw-bold text-warning"><u>Preparación:</u></p>
+                <p class="text-justify">${trago.preparacion}</p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>`;
       listaTragos.append(li);
-      listaTitulo.append();
     });
   }
 );
-
