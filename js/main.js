@@ -4,8 +4,7 @@ const tragos = [
   {idHTML: "ron-busqueda", botella: "Ron"},
   {idHTML: "tequila-busqueda", botella: "Tequila"},
   {idHTML: "vodka-busqueda", botella: "Vodka"},
-  {idHTML: "whisky-busqueda", botella: "Whisky"},
-  {idHTML: "busqueda-cortos", botella: "vaso"}//POR ACÁ VENDRÍAN LAS DEMÁS OPCIONES??
+  {idHTML: "whisky-busqueda", botella: "Whisky"}
 ];
 
 const listaTitulo = document.querySelector("#lista-titulo");
