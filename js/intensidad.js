@@ -17,13 +17,11 @@ const graduaciones = [
       });
       elementoTrago.addEventListener("click", () => {
         window.location.href = "lp-intensidad.html?intensidad=" + graduacion.intensidad;
-        //uso un query parameter para enviar el valor de trago.botella a lp2!!
       });
     }
   });
   
   window.addEventListener("DOMContentLoaded", async () => {
-      console.log("Se inicia correctamente lp-intensidad.html");
       const urlBusqueda = new URLSearchParams(window.location.search);
       const intensidadElegida = urlBusqueda.get("intensidad");
   

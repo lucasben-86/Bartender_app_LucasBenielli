@@ -27,7 +27,6 @@ tragos.forEach(trago => {
 });
 
 window.addEventListener("DOMContentLoaded", async () => {
-    console.log("Se inicia correctamente lp-base-alcoholica.html");
     const urlBusqueda = new URLSearchParams(window.location.search);
     const botellaElegida = urlBusqueda.get("botella");
 

@@ -17,13 +17,11 @@ const tamanios = [
       });
       elementoTrago.addEventListener("click", () => {
         window.location.href = "lp-tipo-trago.html?vaso=" + tamanio.vaso;
-        //uso un query parameter para enviar el valor de trago.botella a lp2!!
       });
     }
   });
   
   window.addEventListener("DOMContentLoaded", async () => {
-      console.log("Se inicia correctamente lp-tipo-trago.html");
       const urlBusqueda = new URLSearchParams(window.location.search);
       const vasoElegido = urlBusqueda.get("vaso");
   
