@@ -23,7 +23,7 @@ const tamanios = [
   });
   
   window.addEventListener("DOMContentLoaded", async () => {
-      console.log("Se inicia correctamente lp-base-alcoholica.html");
+      console.log("Se inicia correctamente lp-tipo-trago.html");
       const urlBusqueda = new URLSearchParams(window.location.search);
       const vasoElegido = urlBusqueda.get("vaso");
   
