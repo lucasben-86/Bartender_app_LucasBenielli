@@ -20,14 +20,14 @@ tragos.forEach(trago => {
       elementoTrago.style.cursor = "auto";
     });
     elementoTrago.addEventListener("click", () => {
-      window.location.href = "landing-page2.html?botella=" + trago.botella;
+      window.location.href = "lp-base-alcoholica.html?botella=" + trago.botella;
       //uso un query parameter para enviar el valor de trago.botella a lp2!!
     });
   }
 });
 
 window.addEventListener("DOMContentLoaded", async () => {
-    console.log("Se inicia correctamente landing-page2.html");
+    console.log("Se inicia correctamente lp-base-alcoholica.html");
     const urlBusqueda = new URLSearchParams(window.location.search);
     const botellaElegida = urlBusqueda.get("botella");
 
