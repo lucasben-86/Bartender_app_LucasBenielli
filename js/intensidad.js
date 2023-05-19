@@ -65,7 +65,7 @@ const graduaciones = [
   
       async function cardsDelay(tragosFiltrados) {
       listaTitulo3.innerHTML = `<h4 class="mt-3">Tragos de intensidad ${intensidadElegida}</h4>`;
-
+      tragosFiltrados.sort((a, b) => a.nombre.localeCompare(b.nombre));
       for (let i = 0; i < tragosFiltrados.length; i++) {
         await tragoDelay(tragosFiltrados[i], i);
       }
