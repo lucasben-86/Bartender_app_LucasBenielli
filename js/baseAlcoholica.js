@@ -10,7 +10,7 @@ const tragos = [
 const listaTitulo = document.querySelector("#lista-titulo");
 const listaTragos = document.querySelector("#lista-tragos");
 
-async function cardTragosDelay(trago, index) {
+async function tragoDelay(trago, index) {
   return new Promise(resolve => {
     setTimeout(() => {
       const ul = document.createElement("ul");
@@ -68,14 +68,14 @@ window.addEventListener("DOMContentLoaded", async () => {
     const resp = await fetch("/js/tragos.json");
     const data = await resp.json();
 
-    async function cardTragosDelay(tragosFiltrados) {
+    async function cardsDelay(tragosFiltrados) {
       listaTitulo.innerHTML = `<h4 class="mt-3">Tragos con base alcohólica de ${botellaElegida}</h4>`;
       
       for (let i = 0; i < tragosFiltrados.length; i++) {
-        await createCardWithDelay(tragosFiltrados[i], i);
+        await tragoDelay(tragosFiltrados[i], i);
       }
     }
 
     const tragosFiltrados = data.filter(trago => trago.botella === botellaElegida);
-    await cardTragosDelay(tragosFiltrados);
+    await cardsDelay(tragosFiltrados);
 });
