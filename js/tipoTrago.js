@@ -63,14 +63,14 @@ const tamanios = [
       const resp = await fetch("/js/tragos.json");
       const data = await resp.json();
       
-      async function cardsDelay(tamaniosFiltrados) {
+      async function cardsDelay(tragosFiltrados) {
       listaTitulo2.innerHTML = `<h4 class="mt-3">Tragos con vaso ${vasoElegido}</h4>`;
 
-      for (let i = 0; i < tamaniosFiltrados.length; i++) {
-        await tragoDelay(tamaniosFiltrados[i], i);
+      for (let i = 0; i < tragosFiltrados.length; i++) {
+        await tragoDelay(tragosFiltrados[i], i);
       }
     }
-    
-      const tamaniosFiltrados = data.filter(tamanio => tamanio.vaso === vasoElegido);
-      await cardsDelay(tamaniosFiltrados);
+
+      const tragosFiltrados = data.filter(tamanio => tamanio.vaso === vasoElegido);
+      await cardsDelay(tragosFiltrados);
 });
