@@ -37,7 +37,7 @@ const tamanios = [
         </div>`;
         listaTragos2.append(ul);
         resolve();
-      }, 500 * index);
+      }, 250 * index);
     });
   }
 
@@ -64,12 +64,13 @@ const tamanios = [
       const data = await resp.json();
       
       async function cardsDelay(tamaniosFiltrados) {
-      listaTitulo2.innerHTML = `<h4 class="mt-3">Tragos con vaso ${vasoElegido}</h4>`;;
+      listaTitulo2.innerHTML = `<h4 class="mt-3">Tragos con vaso ${vasoElegido}</h4>`;
 
       for (let i = 0; i < tamaniosFiltrados.length; i++) {
         await tragoDelay(tamaniosFiltrados[i], i);
       }
     }
+    
       const tamaniosFiltrados = data.filter(tamanio => tamanio.vaso === vasoElegido);
       await cardsDelay(tamaniosFiltrados);
 });

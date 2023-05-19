@@ -41,7 +41,7 @@ async function tragoDelay(trago, index) {
       </div>`;
       listaTragos.append(ul);
       resolve();
-    }, 500 * index);
+    }, 250 * index);
   });
 }
 
@@ -76,6 +76,6 @@ window.addEventListener("DOMContentLoaded", async () => {
       }
     }
 
-    const tragosFiltrados = data.filter(trago => trago.botella === botellaElegida);
-    await cardsDelay(tragosFiltrados);
+      const tragosFiltrados = data.filter(trago => trago.botella === botellaElegida);
+      await cardsDelay(tragosFiltrados);
 });
