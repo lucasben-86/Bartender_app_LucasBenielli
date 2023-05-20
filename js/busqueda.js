@@ -5,8 +5,9 @@ const listaBusqueda = document.querySelector("#lista-busqueda");
 
 botonBusqueda.addEventListener("click", () => {
   const nombreTrago = textoBusqueda.value;
-  window.location.href = "lp-busqueda.html?nombre" + nombreTrago;
+  window.location.href = `lp-busqueda.html?nombre=${nombreTrago}`;
 });
+
 
 window.addEventListener("DOMContentLoaded", async () => {
   const urlBusqueda = new URLSearchParams(window.location.search);
@@ -14,4 +15,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 
   const resp = await fetch("/js/tragos.json");
   const data = await resp.json();
+
+  console.log(tragoBuscado);
+  console.log(data);
 });
