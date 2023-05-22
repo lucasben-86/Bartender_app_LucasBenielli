@@ -34,10 +34,16 @@
     </div>
   </nav>
 
+  <div class="d-flex col-sm-6" role="search">
+    <input id="buscar" type="text" class="form-control form-control-lg" placeholder="escribí el nombre del trago">
+    <button id="btnBuscar" class="btn btn-warning">Buscar</button>
+    <button id="btnAleatorio" class="btn btn-warning mx-4">Aleatorio</button>
+  </div>
+
 <div class="col">
 <h3 id="titulo-busqueda">Resultado</h3>
-<ul id="lista-busqueda">
-</ul>
+<div id="lista-busqueda"></div>
+<ul id="trago-buscado"></ul>
 </div>
 
 <script src="/js/busqueda.js"></script>
