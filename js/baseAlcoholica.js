@@ -10,6 +10,21 @@ const tragos = [
 const listaTitulo = document.querySelector("#lista-titulo");
 const listaTragos = document.querySelector("#lista-tragos");
 
+if (!sessionStorage.getItem('eventoMostrado')) {
+  Swal.fire({
+    icon: 'warning',
+    title: 'Solo para mayores de 18 años',
+    text: 'El abuso de alcohol es peligroso. Consumí con moderación. Prohibida la venta de alcohol a menores.',
+    showClass: {
+      popup: 'animate__animated animate__fadeInDown'
+    },
+    hideClass: {
+      popup: 'animate__animated animate__fadeOutUp'
+    }
+  });
+  sessionStorage.setItem('eventoMostrado', 'true');
+};
+
 async function tragoDelay(trago, index) {
   return new Promise(resolve => {
     setTimeout(() => {
