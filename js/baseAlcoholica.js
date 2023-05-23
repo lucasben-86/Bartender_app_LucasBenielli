@@ -71,7 +71,6 @@ tragos.forEach(trago => {
     });
     elementoTrago.addEventListener("click", () => {
       window.location.href = "lp-base-alcoholica.html?botella=" + trago.botella;
-      //uso un query parameter para enviar el valor de trago.botella a lp2!!
     });
   }
 });
